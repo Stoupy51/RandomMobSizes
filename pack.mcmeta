@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"pack_format": 41,
+		"supported_formats": {
+			"min_inclusive": 27,
+			"max_inclusive": 0
+		},
+		"description": "Random Mob Size [v1.0] by Stoupy51"
+	}
+}
