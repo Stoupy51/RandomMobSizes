@@ -1,7 +1,7 @@
 
 # Set loaded version and display message to players with convention.debug tag
-scoreboard players set RandomMobSizes load.status 100
-tellraw @a[tag=convention.debug] {"text":"[Loaded Random Mob Sizes v1.0]","italic":false,"color":"green"}
+scoreboard players set RandomMobSizes load.status 101
+tellraw @a[tag=convention.debug] {"text":"[Loaded Random Mob Sizes v1.1]","italic":false,"color":"green"}
 
 # Scoreboard objectives, default values : 2500, 40000
 scoreboard objectives add random_mob_sizes.sizes dummy
