@@ -1,0 +1,12 @@
+{
+	"pack": {
+		"pack_format": 57,
+		"description": "RandomMobSizes [1.2.0] by Stoupy51",
+		"supported_formats": {
+			"min_inclusive": 27,
+			"max_inclusive": 0
+		}
+	},
+	"id": "random_mob_sizes"
+}
+
