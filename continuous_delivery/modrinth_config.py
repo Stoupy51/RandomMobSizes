@@ -3,12 +3,7 @@
 from config import *
 
 # Constants
-SUMMARY: str = """
-This datapack provides a funny game experience by randomizing every mob sizes in your world.
-The default scale is 0.25-4.0 but can be configured as you want with the command `/function random_mob_sizes:config`
-
-The datapack is optimized, meaning it do not add any lag to your world/server.
-"""
+SUMMARY: str = "Random all the mob sizes in your world.\n(You can configure it as you want)\n[Optimized + Compatibility]"
 
 DESCRIPTION_MARKDOWN: str = ""
 if os.path.exists(f"{ROOT}/README.md"):
@@ -18,12 +13,10 @@ else:
 	print("README.md not found, description_markdown will be empty")
 
 # Dependencies (list of modrinth slugs)
-DEPENDENCIES: list[dict] = [
-	#{"project_id": "QQRRSSTT", "version_id": "IIJJKKLL", "dependency_type": "required"},
-]
+DEPENDENCIES: list[dict] = []
 
 # Version type (release, beta, alpha)
-VERSION_TYPE: str = "alpha"
+VERSION_TYPE: str = "release"
 
 # Configuration
 modrinth_config: dict = {
