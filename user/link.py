@@ -6,7 +6,7 @@ from python_datapack.utils.database_helper import *
 def main(config: dict) -> None:
 
     # Add some commands when loading datapack
-    write_to_load_file(config, """
+    write_load_file(config, """
 # Scoreboard objectives, default values : 2500, 40000
 scoreboard objectives add random_mob_sizes.sizes dummy
 execute unless score #min_size random_mob_sizes.sizes matches 625.. run tellraw @a [{"text":"[Random Mob Sizes]","color":"dark_aqua"},{"text":" Default minimum size set to base * 0.25","color":"aqua"}]
