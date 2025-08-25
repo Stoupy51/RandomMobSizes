@@ -21,6 +21,8 @@ Mobs concerned by the datapack are:
 
 Meaning modded mobs can be concerned! 🎯
 
+If you want to revert all loaded entities to their original size, you can type `/execute as @e run attribute @s scale base reset`.
+
 ![Random Mob Sizes Image](https://cdn.modrinth.com/data/aKeMRgHX/images/b432d5ac8d584e58d88c735b85ca5c384bb7a877.png)
 
 ## ⭐ Star History
