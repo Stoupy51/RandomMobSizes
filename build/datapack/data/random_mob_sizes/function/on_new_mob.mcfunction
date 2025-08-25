@@ -1,7 +1,9 @@
 
 #> random_mob_sizes:on_new_mob
 #
-# @within	random_mob_sizes:1s_loop
+# @executed	as @e[type=!player,tag=!...]
+#
+# @within	random_mob_sizes:1s_loop [ as @e[type=!player,tag=!...] ]
 #
 
 # Add checked tag

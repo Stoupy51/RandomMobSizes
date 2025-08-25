@@ -8,7 +8,7 @@
 [![StewBeet](https://img.shields.io/github/v/release/Stoupy51/StewBeet?logo=github&label=StewBeet)](https://github.com/Stoupy51/StewBeet)
 
 This datapack provides a funny game experience by randomizing every mob sizes in your world! 🎲 🎮<br>
-The default scale is 0.25-4.0 but can be configured as you want with the command `/function random_mob_sizes:config` ⚙️
+The default scale is 0.75-1.25 but can be configured as you want with the command `/function random_mob_sizes:config` ⚙️
 
 The datapack is optimized, meaning it do not add any lag to your world/server! ⚡️
 

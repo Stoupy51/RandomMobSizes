@@ -1,6 +1,8 @@
 
 #> random_mob_sizes:get_random_number
 #
+# @executed	as @e[type=!player,tag=!...]
+#
 # @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:sizes
 #
 

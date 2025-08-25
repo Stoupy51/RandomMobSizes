@@ -1,6 +1,8 @@
 
 #> random_mob_sizes:apply_random_size
 #
+# @executed	as @e[type=!player,tag=!...]
+#
 # @within	random_mob_sizes:on_new_mob
 #
 
