@@ -18,10 +18,10 @@ if not cfg:
 ROOT: str = get_root_path(__file__, go_up=1)
 SUMMARY: str = "Random all the mob sizes in your world.\n(You can configure it as you want)\n[Optimized + Compatibility]"
 
-DESCRIPTION_MARKDOWN: str = ""
+description_markdown: str = ""
 if os.path.exists(f"{ROOT}/README.md"):
 	with open(f"{ROOT}/README.md", encoding="utf-8") as file:
-		DESCRIPTION_MARKDOWN = file.read()
+		description_markdown = file.read()
 else:
 	print("README.md not found, description_markdown will be empty")
 
@@ -36,10 +36,12 @@ modrinth_config: dict = {
 	"slug": "random-mob-sizes-dp",
 	"project_name": cfg.name,
 	"version": cfg.version,
+	"authors": cfg.author,
 	"summary": SUMMARY,
-	"description_markdown": DESCRIPTION_MARKDOWN,
+	"description_markdown": description_markdown,
 	"dependencies": DEPENDENCIES,
 	"version_type": VERSION_TYPE,
 	"build_folder": cfg.output,
+	"package_as_mod": "separate",
 }
 
