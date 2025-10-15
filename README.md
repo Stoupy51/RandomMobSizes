@@ -23,6 +23,8 @@ Meaning modded mobs can be concerned! 🎯
 
 If you want to revert all loaded entities to their original size, you can type `/execute as @e run attribute @s scale base reset`.
 
+![Promotional image](https://raw.githubusercontent.com/Stoupy51/RandomMobSizes/refs/heads/main/assets/promo_1.jpg)
+
 ![Random Mob Sizes Image](https://cdn.modrinth.com/data/aKeMRgHX/images/b432d5ac8d584e58d88c735b85ca5c384bb7a877.png)
 
 ## ⭐ Star History
