@@ -21,7 +21,7 @@ data_pack:
     load: ["merge/datapack"]
 
 require:
-    - "stewbeet.plugins.initialize"
+    - "stewbeet"
 
 # A list of strings or dicts representing "plugins".
 pipeline:

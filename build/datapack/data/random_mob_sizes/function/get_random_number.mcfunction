@@ -3,9 +3,10 @@
 #
 # @executed	as @e[type=!player,tag=!...]
 #
-# @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:sizes
+# @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:macro
 #
 
 # Use macro to get a random number
+$scoreboard players set #random random_mob_sizes.sizes $(min)
 $execute store result score #random random_mob_sizes.sizes run random value $(min)..$(max)
 

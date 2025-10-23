@@ -3,7 +3,7 @@
 #
 # @executed	as @e[type=!player,tag=!...]
 #
-# @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:sizes
+# @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:macro
 #
 
 # Apply scale
