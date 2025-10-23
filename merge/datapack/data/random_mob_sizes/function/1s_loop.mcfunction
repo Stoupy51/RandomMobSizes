@@ -16,6 +16,10 @@ execute unless score #max_size random_mob_sizes.sizes matches 625.. run tellraw 
 execute unless score #max_size random_mob_sizes.sizes matches ..160000 run tellraw @a [{"text":"[Random Mob Sizes] ","color":"dark_aqua"},{"text":"Maximum size cannot be higher than 16.0, resetting to default value (1.25)","color":"aqua"}]
 execute unless score #max_size random_mob_sizes.sizes matches 625..160000 run data modify storage random_mob_sizes:config max_size set value 1.25
 
+# Health scale
+execute unless data storage random_mob_sizes:config {health_scale:false} unless data storage random_mob_sizes:config {health_scale:true} run tellraw @a [{"text":"[Random Mob Sizes] ","color":"dark_aqua"},{"text":"Health Scale cannot be something else than 'true' or 'false', resetting to default value (true)","color":"aqua"}]
+execute unless data storage random_mob_sizes:config {health_scale:false} unless data storage random_mob_sizes:config {health_scale:true} run data modify storage random_mob_sizes:config health_scale set value true
+
 # Seek for new mobs
 execute as @e[type=!player,type=!armor_stand,tag=!random_mob_sizes.checked,tag=!smithed.entity,tag=!smithed.strict,tag=!global.ignore] run function random_mob_sizes:on_new_mob
 
