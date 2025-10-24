@@ -12,6 +12,40 @@ The default scale is 0.75-1.25 but can be configured as you want with the comman
 
 The datapack is optimized, meaning it do not add any lag to your world/server! ⚡️
 
+You can also configure per-mob behavior to fine‑tune size ranges and health scaling for specific entities. 🎯
+
+## Configuration ⚙️
+
+Run the helper command to configure the pack:
+
+- ▶️ Execute `/function random_mob_sizes:config`
+- 💬 This prints clickable messages in chat that prefill commands you can edit and send.
+
+What you can configure (from the in-game helper):
+
+- 📏 Value range for sizes: 0.0625 – 16.0
+- 🌐 Default global range: min_size = 0.75, max_size = 1.25
+- ❤️ Health scaling toggle: whether mob health scales with their size (disabled by default)
+
+Global settings examples 🛠️:
+
+- ➖📏 Set minimum size
+  - `/data modify storage random_mob_sizes:config min_size set value 0.75`
+- ➕📏 Set maximum size
+  - `/data modify storage random_mob_sizes:config max_size set value 1.25`
+- 🔁❤️ Enable/disable health scaling
+  - `/data modify storage random_mob_sizes:config health_scale set value false`
+  - Use `true` to enable, `false` to disable.
+
+Per-mob overrides (optional) 🐾:
+
+- 🧬 You can override the global settings for a specific mob type. Provide any subset of keys; omitted keys fall back to the global values.
+- 🐔 Example for chickens:
+  - `/data modify storage random_mob_sizes:config mobs."minecraft:chicken" set value {min_size:0.75,max_size:1.25,health_scale:true}`
+- 🔁 Replace `minecraft:chicken` with the desired entity ID (e.g., `minecraft:zombie`).
+
+💡 Tip: You can re-run `/function random_mob_sizes:config` at any time to show the clickable helpers again.
+
 ## Technical / Compatibility 🔧
 Mobs concerned by the datapack are:
 - mobs with a "Brain" NBT 🧠
