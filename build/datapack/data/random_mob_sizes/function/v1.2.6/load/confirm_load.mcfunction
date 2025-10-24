@@ -19,6 +19,7 @@ execute unless data storage random_mob_sizes:config max_size run tellraw @a [{"t
 execute unless data storage random_mob_sizes:config min_size run data modify storage random_mob_sizes:config min_size set value 0.75
 execute unless data storage random_mob_sizes:config max_size run data modify storage random_mob_sizes:config max_size set value 1.25
 execute unless data storage random_mob_sizes:config health_scale run data modify storage random_mob_sizes:config health_scale set value true
+execute unless data storage random_mob_sizes:config mobs run data modify storage random_mob_sizes:config mobs set value {}
 
 # Start loop
 schedule function random_mob_sizes:1s_loop 1s replace
