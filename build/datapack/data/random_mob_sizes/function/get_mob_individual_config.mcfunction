@@ -11,4 +11,5 @@ $data modify storage random_mob_sizes:temp found_mob set from storage random_mob
 execute if data storage random_mob_sizes:temp found_mob.min_size run data modify storage random_mob_sizes:temp mob_config.min_size set from storage random_mob_sizes:temp found_mob.min_size
 execute if data storage random_mob_sizes:temp found_mob.max_size run data modify storage random_mob_sizes:temp mob_config.max_size set from storage random_mob_sizes:temp found_mob.max_size
 execute if data storage random_mob_sizes:temp found_mob.health_scale run data modify storage random_mob_sizes:temp mob_config.health_scale set from storage random_mob_sizes:temp found_mob.health_scale
+data remove storage random_mob_sizes:temp found_mob
 
