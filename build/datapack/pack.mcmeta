@@ -1,7 +1,10 @@
 {
 	"pack": {
-		"pack_format": 71,
-		"description": "RandomMobSizes [1.2.7] by Stoupy51"
+		"pack_format": 57,
+		"description": "RandomMobSizes [1.2.8] by Stoupy51",
+		"supported_formats": [57,1000],
+		"min_format": 57,
+		"max_format": [1000,0]
 	},
 	"id": "random_mob_sizes"
 }
