@@ -20,6 +20,14 @@ execute unless score #max_size random_mob_sizes.sizes matches 625..160000 run da
 execute unless data storage random_mob_sizes:config {health_scale:false} unless data storage random_mob_sizes:config {health_scale:true} run tellraw @a [{"text":"[Random Mob Sizes] ","color":"dark_aqua"},{"text":"Health Scale cannot be something else than 'true' or 'false', resetting to default value (true)","color":"aqua"}]
 execute unless data storage random_mob_sizes:config {health_scale:false} unless data storage random_mob_sizes:config {health_scale:true} run data modify storage random_mob_sizes:config health_scale set value true
 
+# Speed scale
+execute unless data storage random_mob_sizes:config {speed_scale:false} unless data storage random_mob_sizes:config {speed_scale:true} run tellraw @a [{"text":"[Random Mob Sizes] ","color":"dark_aqua"},{"text":"Speed Scale cannot be something else than 'true' or 'false', resetting to default value (false)","color":"aqua"}]
+execute unless data storage random_mob_sizes:config {speed_scale:false} unless data storage random_mob_sizes:config {speed_scale:true} run data modify storage random_mob_sizes:config speed_scale set value false
+
+# Damage scale
+execute unless data storage random_mob_sizes:config {damage_scale:false} unless data storage random_mob_sizes:config {damage_scale:true} run tellraw @a [{"text":"[Random Mob Sizes] ","color":"dark_aqua"},{"text":"Damage Scale cannot be something else than 'true' or 'false', resetting to default value (false)","color":"aqua"}]
+execute unless data storage random_mob_sizes:config {damage_scale:false} unless data storage random_mob_sizes:config {damage_scale:true} run data modify storage random_mob_sizes:config damage_scale set value false
+
 # Seek for new mobs
 execute as @e[type=!player,type=!armor_stand,tag=!random_mob_sizes.checked,tag=!smithed.entity,tag=!smithed.strict,tag=!global.ignore] run function random_mob_sizes:on_new_mob
 

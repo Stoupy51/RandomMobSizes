@@ -18,6 +18,6 @@ function random_mob_sizes:get_random_number with storage random_mob_sizes:macro
 # Use macro to get apply random size
 execute store result storage random_mob_sizes:macro scale double 0.0001 run scoreboard players get #random random_mob_sizes.sizes
 scoreboard players remove #random random_mob_sizes.sizes 10000
-execute store result storage random_mob_sizes:macro health_multiplier double 0.0001 run scoreboard players get #random random_mob_sizes.sizes
+execute store result storage random_mob_sizes:macro scale_minus_one double 0.0001 run scoreboard players get #random random_mob_sizes.sizes
 function random_mob_sizes:apply_new_scale_using_macro with storage random_mob_sizes:macro
 
