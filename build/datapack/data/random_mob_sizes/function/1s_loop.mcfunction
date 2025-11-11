@@ -35,7 +35,7 @@ execute unless data storage random_mob_sizes:config {damage_scale:false} unless 
 execute unless data storage random_mob_sizes:config {damage_scale:false} unless data storage random_mob_sizes:config {damage_scale:true} run data modify storage random_mob_sizes:config damage_scale set value false
 
 # Seek for new mobs
-execute as @e[type=!player,type=!armor_stand,tag=!random_mob_sizes.checked,tag=!smithed.entity,tag=!smithed.strict,tag=!global.ignore] run function random_mob_sizes:on_new_mob
+execute as @e[type=!player,type=!armor_stand,tag=!random_mob_sizes.checked,tag=!smithed.entity,tag=!smithed.strict,tag=!global.ignore,predicate=random_mob_sizes:has_brain] run function random_mob_sizes:on_new_mob
 
 # Loop again
 schedule function random_mob_sizes:1s_loop 1s replace

@@ -1,6 +1,6 @@
 
 # Imports
-from stewbeet import write_load_file
+from stewbeet import Mem, Predicate, set_json_encoder, write_load_file
 
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
@@ -28,6 +28,17 @@ execute unless data storage random_mob_sizes:config mobs run data modify storage
 # Start loop
 schedule function random_mob_sizes:1s_loop 1s replace
 """)  # noqa: E501
+
+    # Set has_brain predicate
+    Mem.ctx.data[Mem.ctx.project_id].predicates["has_brain"] = set_json_encoder(
+        Predicate({
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": r"{Brain:{}}"
+            }
+        })
+    )
 
     pass
 

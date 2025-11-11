@@ -1,7 +1,7 @@
 
 #> random_mob_sizes:apply_random_size
 #
-# @executed	as @e[type=!player,tag=!...]
+# @executed	as @e[type=!player,tag=!...,predicate=random_mob_sizes:has_brain]
 #
 # @within	random_mob_sizes:on_new_mob
 #
