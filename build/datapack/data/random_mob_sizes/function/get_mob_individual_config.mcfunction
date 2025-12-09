@@ -5,6 +5,8 @@
 #
 # @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:macro
 #
+# @args		entity_type (unknown)
+#
 
 # If individual config exists, use it
 $data modify storage random_mob_sizes:temp found_mob set from storage random_mob_sizes:config mobs."$(entity_type)"

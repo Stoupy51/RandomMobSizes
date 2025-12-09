@@ -5,6 +5,9 @@
 #
 # @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:macro
 #
+# @args		scale (unknown)
+#			scale_minus_one (unknown)
+#
 
 # Apply scale
 $attribute @s scale base set $(scale)

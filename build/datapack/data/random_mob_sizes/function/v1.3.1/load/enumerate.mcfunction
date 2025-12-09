@@ -1,5 +1,5 @@
 
-#> random_mob_sizes:v1.3.0/load/enumerate
+#> random_mob_sizes:v1.3.1/load/enumerate
 #
 # @within	#random_mob_sizes:enumerate
 #
@@ -11,5 +11,5 @@ execute unless score #random_mob_sizes.major load.status matches 1.. run scorebo
 execute if score #random_mob_sizes.major load.status matches 1 unless score #random_mob_sizes.minor load.status matches 3.. run scoreboard players set #random_mob_sizes.minor load.status 3
 
 # If current patch is too low, set it to the current patch (only if major and minor are correct)
-execute if score #random_mob_sizes.major load.status matches 1 if score #random_mob_sizes.minor load.status matches 3 unless score #random_mob_sizes.patch load.status matches 0.. run scoreboard players set #random_mob_sizes.patch load.status 0
+execute if score #random_mob_sizes.major load.status matches 1 if score #random_mob_sizes.minor load.status matches 3 unless score #random_mob_sizes.patch load.status matches 1.. run scoreboard players set #random_mob_sizes.patch load.status 1
 

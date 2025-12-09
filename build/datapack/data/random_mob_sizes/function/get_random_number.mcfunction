@@ -5,6 +5,9 @@
 #
 # @within	random_mob_sizes:apply_random_size with storage random_mob_sizes:macro
 #
+# @args		min_size (unknown)
+#			max_size (unknown)
+#
 
 # Use macro to get a random number
 $execute store result score #random random_mob_sizes.sizes run random value $(min_size)..$(max_size)
