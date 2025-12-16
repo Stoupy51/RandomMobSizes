@@ -10,10 +10,12 @@ data modify storage random_mob_sizes:temp mob_config set from storage random_mob
 function random_mob_sizes:get_mob_individual_config with storage random_mob_sizes:macro
 
 # Get a random number between min size and max size (x10000 for digits)
-execute store result storage random_mob_sizes:macro min_size int 1 run data get storage random_mob_sizes:temp mob_config.min_size 10000
-execute store result storage random_mob_sizes:macro max_size int 1 run data get storage random_mob_sizes:temp mob_config.max_size 10000
-execute store result score #random random_mob_sizes.sizes run data get storage random_mob_sizes:macro min_size
-function random_mob_sizes:get_random_number with storage random_mob_sizes:macro
+# Unless min size equals max size, then just use that size
+execute store result score #random random_mob_sizes.sizes run data get storage random_mob_sizes:temp mob_config.min_size 10000
+execute store result score #max random_mob_sizes.sizes run data get storage random_mob_sizes:temp mob_config.max_size 10000
+execute unless score #random random_mob_sizes.sizes = #max random_mob_sizes.sizes store result storage random_mob_sizes:macro min_size int 1 run scoreboard players get #random random_mob_sizes.sizes
+execute unless score #random random_mob_sizes.sizes = #max random_mob_sizes.sizes store result storage random_mob_sizes:macro max_size int 1 run scoreboard players get #max random_mob_sizes.sizes
+execute unless score #random random_mob_sizes.sizes = #max random_mob_sizes.sizes run function random_mob_sizes:get_random_number with storage random_mob_sizes:macro
 
 # Use macro to get apply random size
 execute store result storage random_mob_sizes:macro scale double 0.0001 run scoreboard players get #random random_mob_sizes.sizes
