@@ -2,7 +2,7 @@
 #> random_mob_sizes:1s_loop
 #
 # @within	random_mob_sizes:1s_loop 1s replace [ scheduled ]
-#			random_mob_sizes:v1.3.1/load/confirm_load 1s replace [ scheduled ]
+#			random_mob_sizes:v1.3.2/load/confirm_load 1s replace [ scheduled ]
 #
 
 ## Check configuration
