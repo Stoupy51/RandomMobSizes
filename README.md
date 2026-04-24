@@ -71,11 +71,5 @@ If you want to revert all loaded entities to their original size, you can type `
 
 ## ⭐ Star History
 
-<a href="https://star-history.com/#Stoupy51/RandomMobSizes&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Stoupy51/RandomMobSizes&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Stoupy51/RandomMobSizes&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Stoupy51/RandomMobSizes&type=Date" />
- </picture>
-</a>
+[![Star History Chart](https://api.star-history.com/chart?repos=Stoupy51/RandomMobSizes&type=date&legend=top-left)](https://www.star-history.com/?repos=Stoupy51%2FRandomMobSizes&type=date&legend=top-left)
 
