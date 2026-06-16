@@ -1,13 +1,13 @@
 
-#> random_mob_sizes:v1.3.4/load/confirm_load
+#> random_mob_sizes:v1.3.5/load/confirm_load
 #
-# @within	random_mob_sizes:v1.3.4/load/secondary
+# @within	random_mob_sizes:v1.3.5/load/secondary
 #
 
 # Confirm load
-tellraw @a[tag=convention.debug] {"text":"[Loaded RandomMobSizes v1.3.4]","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded RandomMobSizes v1.3.5]","color":"green"}
 scoreboard players set #random_mob_sizes.loaded load.status 1
-function random_mob_sizes:v1.3.4/load/set_items_storage
+function random_mob_sizes:v1.3.5/load/set_items_storage
 
 # Scoreboard objectives and tellraws for default config values
 scoreboard objectives add random_mob_sizes.sizes dummy
