@@ -1,6 +1,6 @@
 
 # Imports
-from stewbeet import Mem, Predicate, set_json_encoder, write_load_file
+from stewbeet import DataPack, Mem, Predicate, set_json_encoder, write_load_file
 
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
@@ -29,15 +29,14 @@ execute unless data storage random_mob_sizes:config mobs run data modify storage
 schedule function random_mob_sizes:1s_loop 1s replace
 """)  # noqa: E501
 
-    # Set has_brain predicate
+    # Set has_brain predicate, keyed on "condition" before 26.3 and on "type" in the since_26_3 overlay
+    has_brain: dict[str, object] = {"entity": "this", "predicate": {"nbt": r"{Brain:{}}"}}
     Mem.ctx.data[Mem.ctx.project_id].predicates["has_brain"] = set_json_encoder(
-        Predicate({
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-                "nbt": r"{Brain:{}}"
-            }
-        })
+        Predicate({"condition": "minecraft:entity_properties", **has_brain})
+    )
+    Mem.ctx.data.overlays["since_26_3"] = DataPack(supported_formats=[121, 9999], min_format=121, max_format=9999)
+    Mem.ctx.data.overlays["since_26_3"][Mem.ctx.project_id].predicates["has_brain"] = set_json_encoder(
+        Predicate({"type": "minecraft:entity_properties", **has_brain})
     )
 
     pass

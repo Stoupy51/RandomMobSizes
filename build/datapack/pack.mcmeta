@@ -15,7 +15,8 @@
 	"id": "random_mob_sizes",
 	"overlays": {
 		"entries": [
-			{"directory": "before_1_21_5","formats": [57,61],"min_format": 57,"max_format": 61}
+			{"directory": "before_1_21_5","formats": [57,61],"min_format": 57,"max_format": 61},
+			{"formats": [121,9999],"directory": "since_26_3","min_format": 121,"max_format": 9999}
 		]
 	}
 }
