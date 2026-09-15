@@ -1,11 +1,12 @@
 {
 	"pack": {
-		"pack_format": 121,
-		"description": "RandomMobSizes [1.3.6] by Stoupy51",
-		"min_format": [
-			121,
-			0
+		"pack_format": 57,
+		"description": "RandomMobSizes [1.3.7] by Stoupy51",
+		"supported_formats": [
+			57,
+			9999
 		],
+		"min_format": 57,
 		"max_format": [
 			9999,
 			0
