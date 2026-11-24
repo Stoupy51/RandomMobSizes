@@ -7,7 +7,6 @@
 # Confirm load
 tellraw @a[tag=convention.debug] {"text":"[Loaded RandomMobSizes v1.3.7]","color":"green"}
 scoreboard players set #random_mob_sizes.loaded load.status 1
-function random_mob_sizes:v1.3.7/load/set_items_storage
 
 # Scoreboard objectives and tellraws for default config values
 scoreboard objectives add random_mob_sizes.sizes dummy

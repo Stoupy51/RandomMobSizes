@@ -1,7 +1,7 @@
 
 #> random_mob_sizes:config
 #
-# @within	???
+# @within	(public)
 #
 
 # Ask to configure size
